@@ -45,6 +45,7 @@ img {
     border-radius: 15px;
     float: left;
     flex: 30%;
+    height: 50%;
 }
 
 .content-box {
