@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic Function Solver</title>
+
+    <style>
+        input {
+            margin-bottom: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Giải phương trình bậc 2: Ax<sup>2</sup> + Bx + C = 0</h1>
+    <form>
+        <big><b>A =</b></big> <input type="text" name="A" id="A"> <br>
+        <big><b>B =</b></big> <input type="text" name="B" id="B"> <br>
+        <big><b>C =</b></big> <input type="text" name="C" id="C"> <br>
+    </form>
+    <button onclick="quadraticFunction()" style="margin-bottom: 15px;">Giải phương trình</button>
+    <hr style="border: 0.5px solid; background-color: black;">
+
+    <h1>Giải</h1>
+    <p>Delta = <span id="delta"></span></p>
+    <p id="message"></p>
+    <p>x<sub>1</sub> = <span id="x1"></span></p>
+    <p>x<sub>2</sub> = <span id="x2"></span></p>
+
+    <script>
+        function quadraticFunction() {
+            var a = document.getElementById("A").value;
+            var b = document.getElementById("B").value;
+            var c = document.getElementById("C").value;
+
+            var delta = (b*b) - (4*a*c);
+            document.getElementById("delta").innerHTML = delta;
+            if (delta < 0) {
+                document.getElementById("message").innerHTML = "Phương trình vô nghiệm";
+            } else if (delta === 0) {
+                document.getElementById("message").innerHTML = "Phương trình có nghiệm kép";
+                
+                var x = (-b)/(2*a);
+                document.getElementById("x1").innerHTML = x;
+                document.getElementById("x2").innerHTML = x;
+            } else {
+                document.getElementById("message").innerHTML = "Phương trình có 2 nghiệm phân biệt";
+                
+                var x1 = ((-b) + Math.sqrt(delta)) / (2*a);
+                document.getElementById("x1").innerHTML = x1;
+
+                var x2 = ((-b) - Math.sqrt(delta)) / (2*a);
+                document.getElementById("x2").innerHTML = x2;
+            }
+        }
+    </script>
+</body>
+
+</html>
