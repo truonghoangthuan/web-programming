@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Informaion</title>
+
+    <style>
+        .first-column {
+            text-align: right;
+        }
+
+        .second-column {
+            padding-left: 10px;
+        }
+    </style>
+    
+    <script src="personal-information.js"></script>
+    
+</head>
+
+<body>
+    <table>
+        <th colspan="2">
+            <h2>Personal Informaion</h2>
+        </th>
+        <tr>
+            <td class="first-column">Enter name*: </td>
+            <td class="second-column"><input type="text" class="mandatory-field" id="inp-name"></td>
+        </tr>
+        <tr>
+            <td class="first-column">Sex*: </td>
+            <td class="second-column"><input type="radio" class="mandatory-field" id="inp-sex">Male <input type="radio">Female</td>
+        </tr>
+        <tr>
+            <td class="first-column">Enter email address*: </td>
+            <td class="second-column"><input type="text" class="mandatory-field" id="inp-email"></td>
+        </tr>
+        <tr>
+            <td class="first-column">Enter birthday (MM/DD/YYYY)*: </td>
+            <td class="second-column"><input type="text" class="mandatory-field" id="inp-birthday"></td>
+        </tr>
+        <tr>
+            <td class="first-column">Enter street address (line 1)*: </td>
+            <td class="second-column"><input type="text" class="mandatory-field" id="inp-address"></td>
+        </tr>
+        <tr>
+            <td class="first-column">Enter city*: </td>
+            <td class="second-column"><input type="text" class="mandatory-field" id="inp-city"></td>
+        </tr>
+        <tr>
+            <td class="first-column">Select a region*: </td>
+            <td class="second-column">
+                <select name="region" id="inp-region" class="mandatory-field">
+                    <option value=""></option>
+                    <option value="Vietnam">Vietnam</option>
+                    <option value="America">America</option>
+                    <option value="France">France</option>
+                    <option value="Germany">Germany</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="first-column">Enter 5-digit ZIP code*: </td>
+            <td class="second-column"><input type="text" class="mandatory-field" id="inp-zip"></td>
+        </tr>
+        <tr>
+            <td class="first-column">
+                <input type="button" value="Finished" onclick="isEmpty()">
+            </td>
+            <td class="second-column">
+                <input type="button" value="Clear">
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
