@@ -28,32 +28,32 @@
         </th>
         <tr>
             <td class="first-column">Enter name*: </td>
-            <td class="second-column"><input type="text" class="mandatory-field" id="inp-name"></td>
+            <td class="second-column"><input type="text" id="inp-name"></td>
         </tr>
         <tr>
             <td class="first-column">Sex*: </td>
-            <td class="second-column"><input type="radio" class="mandatory-field" id="inp-sex">Male <input type="radio">Female</td>
+            <td class="second-column"><input type="radio" id="inp-sex">Male <input type="radio">Female</td>
         </tr>
         <tr>
             <td class="first-column">Enter email address*: </td>
-            <td class="second-column"><input type="text" class="mandatory-field" id="inp-email"></td>
+            <td class="second-column"><input type="text" id="inp-email"></td>
         </tr>
         <tr>
             <td class="first-column">Enter birthday (MM/DD/YYYY)*: </td>
-            <td class="second-column"><input type="text" class="mandatory-field" id="inp-birthday"></td>
+            <td class="second-column"><input type="text" id="inp-birthday"></td>
         </tr>
         <tr>
             <td class="first-column">Enter street address (line 1)*: </td>
-            <td class="second-column"><input type="text" class="mandatory-field" id="inp-address"></td>
+            <td class="second-column"><input type="text" id="inp-address"></td>
         </tr>
         <tr>
             <td class="first-column">Enter city*: </td>
-            <td class="second-column"><input type="text" class="mandatory-field" id="inp-city"></td>
+            <td class="second-column"><input type="text" id="inp-city"></td>
         </tr>
         <tr>
             <td class="first-column">Select a region*: </td>
             <td class="second-column">
-                <select name="region" id="inp-region" class="mandatory-field">
+                <select name="region" id="inp-region">
                     <option value=""></option>
                     <option value="Vietnam">Vietnam</option>
                     <option value="America">America</option>
@@ -64,11 +64,11 @@
         </tr>
         <tr>
             <td class="first-column">Enter 5-digit ZIP code*: </td>
-            <td class="second-column"><input type="text" class="mandatory-field" id="inp-zip"></td>
+            <td class="second-column"><input type="text" id="inp-zip"></td>
         </tr>
         <tr>
             <td class="first-column">
-                <input type="button" value="Finished" onclick="isEmpty()">
+                <input type="button" value="Finished" onclick="validationInformation()">
             </td>
             <td class="second-column">
                 <input type="button" value="Clear">
