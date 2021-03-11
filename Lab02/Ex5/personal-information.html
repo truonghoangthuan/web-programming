@@ -13,12 +13,10 @@
         }
 
         .second-column {
+
             padding-left: 10px;
         }
     </style>
-    
-    <script src="personal-information.js"></script>
-    
 </head>
 
 <body>
@@ -28,53 +26,83 @@
         </th>
         <tr>
             <td class="first-column">Enter name*: </td>
-            <td class="second-column"><input type="text" id="inp-name"></td>
+            <td class="second-column">
+                <form id="inp-form-name">
+                    <input type="text" id="inp-name">
+                </form>
+            </td>
         </tr>
         <tr>
             <td class="first-column">Sex*: </td>
-            <td class="second-column"><input type="radio" id="inp-sex">Male <input type="radio">Female</td>
+            <td class="second-column">
+                <form id="inp-form-sex">
+                    <input type="radio" id="inp-sex">Male <input type="radio">Female
+                </form>
+            </td>
         </tr>
         <tr>
             <td class="first-column">Enter email address*: </td>
-            <td class="second-column"><input type="text" id="inp-email"></td>
+            <td class="second-column">
+                <form id="inp-form-email">
+                    <input type="text" id="inp-email">
+                </form>
+            </td>
         </tr>
         <tr>
             <td class="first-column">Enter birthday (MM/DD/YYYY)*: </td>
-            <td class="second-column"><input type="text" id="inp-birthday"></td>
+            <td class="second-column">
+                <form id="inp-form-birthday">
+                    <input type="text" id="inp-birthday">
+                </form>
+            </td>
         </tr>
         <tr>
             <td class="first-column">Enter street address (line 1)*: </td>
-            <td class="second-column"><input type="text" id="inp-address"></td>
+            <td class="second-column">
+                <form id="inp-form-address">
+                    <input type="text" id="inp-address">
+                </form>
+            </td>
         </tr>
         <tr>
             <td class="first-column">Enter city*: </td>
-            <td class="second-column"><input type="text" id="inp-city"></td>
+            <td class="second-column">
+                <form id="inp-form-city">
+                    <input type="text" id="inp-city">
+                </form>
+            </td>
         </tr>
         <tr>
             <td class="first-column">Select a region*: </td>
             <td class="second-column">
                 <select name="region" id="inp-region">
-                    <option value=""></option>
                     <option value="Vietnam">Vietnam</option>
                     <option value="America">America</option>
                     <option value="France">France</option>
                     <option value="Germany">Germany</option>
+                    <option value="Germany">Italy</option>
                 </select>
             </td>
         </tr>
         <tr>
             <td class="first-column">Enter 5-digit ZIP code*: </td>
-            <td class="second-column"><input type="text" id="inp-zip"></td>
+            <td class="second-column">
+                <form id="inp-form-zip">
+                    <input type="text" id="inp-zip">
+                </form>
+            </td>
         </tr>
         <tr>
             <td class="first-column">
-                <input type="button" value="Finished" onclick="validationInformation()">
+                <input type="button" value="Finished" onclick="validateInformation()">
             </td>
             <td class="second-column">
-                <input type="button" value="Clear">
+                <input type="button" value="Clear" onclick="clearInput()">
             </td>
         </tr>
     </table>
+
+    <script src="personal-information.js"></script>
 </body>
 
 </html>

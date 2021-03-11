@@ -1,5 +1,5 @@
-function validationInformation() {
-    var name = document.getElementById("inp-name").value;
+function validateInformation() {
+    var inpName = document.getElementById("inp-name").value;
     var sex = document.getElementById("inp-sex").checked;
     var email = document.getElementById("inp-email").value;
     var birthday = document.getElementById("inp-birthday").value;
@@ -9,14 +9,14 @@ function validationInformation() {
     var zip = document.getElementById("inp-zip").value;
 
     //Check empty field
-    if (name === "" || 
-        sex === false || 
-        email === "" || 
+    if (inpName === "" ||
+        sex === false ||
+        email === "" ||
         birthday === "" ||
         address === "" ||
         city === "" ||
         region === "" ||
-        zip === ""){
+        zip === "") {
         alert("Please enter your information!");
         return;
     }
@@ -41,4 +41,13 @@ function validationInformation() {
         alert("Please enter valid ZIP code!");
         return;
     }
+}
+
+function clearInput() {
+    document.getElementById("inp-form-name").reset();
+    document.getElementById("inp-form-sex").reset();
+    document.getElementById("inp-form-email").reset();
+    document.getElementById("inp-form-birthday").reset();
+    document.getElementById("inp-form-address").reset();
+    document.getElementById("inp-form-zip").reset();
 }
