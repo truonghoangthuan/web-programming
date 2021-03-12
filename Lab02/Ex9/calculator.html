@@ -6,10 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="calculator-colorful.css" id="themes">
 </head>
 
 <body>
+    <div class="theme-select">
+        <span><big>Select theme: </big></span>
+        <select id="theme-select-dropdown" onclick="changeTheme()">
+            <option class="theme-select-option" value="Light">Light</option>
+            <option class="theme-select-option" value="Dark">Dark</option>
+            <option class="theme-select-option" value="Colorful">Colorful</option>
+        </select>
+    </div>
+
     <form id="calculator" class="calculator">
         <table class="table" id="table">
             <tr>

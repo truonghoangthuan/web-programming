@@ -3,6 +3,7 @@
     width: 414px;
     margin: auto;
     border: 1px solid black;
+    background-color: rgb(30, 150, 219);
 }
 
 .text-box {
@@ -14,6 +15,8 @@
     text-align: right;
     font-size: 16pt;
     box-sizing: border-box;
+    background-color: limegreen;
+    color: yellow;
 }
 
 .btn {
@@ -25,8 +28,30 @@
     box-sizing: border-box;
 }
 
+#btn-1,
+#btn-2,
+#btn-3,
+#btn-plus,
+#btn-7,
+#btn-8,
+#btn-9,
+#btn-multi {
+    background-color: yellow;
+}
+
+#btn-4,
+#btn-5,
+#btn-6,
+#btn-minus,
+#btn-clear,
+#btn-0,
+#btn-equal,
+#btn-divide {
+    background-color: cyan;
+}
+
 input:active {
-    background-color: lightgray;
+    border: none;
 }
 
 td {
@@ -41,4 +66,14 @@ tr {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+.theme-select {
+    margin: 10px auto 10px auto;
+    width: 414px;
+    text-align: center;
+}
+
+.theme-select-dropdown {
+    padding: 0px;
 }

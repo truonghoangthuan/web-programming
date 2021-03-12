@@ -42,3 +42,13 @@ tr {
     padding: 0px;
     box-sizing: border-box;
 }
+
+.theme-select {
+    margin: 10px auto 10px auto;
+    width: 414px;
+    text-align: center;
+}
+
+.theme-select-dropdown {
+    padding: 0px;
+}
