@@ -1,0 +1,35 @@
+.calculator {
+    padding: 0px;
+    width: 400px;
+    margin: auto;
+}
+
+.input-box {
+    width: 408px;
+    height: 30px;
+    padding: 0px;
+    margin: 0px auto 0px auto;
+    box-sizing: border-box;
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    padding: 2px 2px 2px 2px;
+    border-width: 1px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+td {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+tr {
+    width: 400px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}

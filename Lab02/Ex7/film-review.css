@@ -5,8 +5,7 @@ body {
 }
 
 .banner {
-    margin: 0px auto 0px auto;
-    display: block;
+    width: 100%;
 }
 
 .heading {
@@ -82,23 +81,26 @@ body {
     border-style: solid;
     border-color: gray;
     border-radius: 10px;
+    margin: 0px;
+    min-width: 100%;
+    height: auto;
+    display: inline-block;
 }
 
 .review-text img {
     float: left;
     margin: 5px;
-    max-width: 100%;
-    max-height: 100%;
+}
+.reviewer-information {
+    font-style: italic;
+    margin-bottom: 20pt;
+    min-width: 100%;
+    display: inline-block;
 }
 
 .reviewer-information img {
     float: left;
     margin: 5px;
-}
-
-.reviewer-information {
-    font-style: italic;
-    margin-bottom: 20pt;
 }
 
 .reviewer-information::first-line {
