@@ -14,67 +14,71 @@
         <table class="table" id="table">
             <tr>
                 <td colspan="4">
-                    <input type="text" id="input-box" class="input-box">
+                    <form id="text-box-form">
+                        <input type="text" id="text-box" class="text-box">
+                    </form>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="button" value="1" id="btn-1" class="btn">
+                    <input type="button" value="1" id="btn-1" class="btn" onclick="displayButton('1')">
                 </td>
                 <td>
-                    <input type="button" value="2" id="btn-2" class="btn">
+                    <input type="button" value="2" id="btn-2" class="btn" onclick="displayButton('2')">
                 </td>
                 <td>
-                    <input type="button" value="3" id="btn-3" class="btn">
+                    <input type="button" value="3" id="btn-3" class="btn" onclick="displayButton('3')">
                 </td>
                 <td>
-                    <input type="button" value="+" id="btn-plus" class="btn">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="button" value="4" id="btn-4" class="btn">
-                </td>
-                <td>
-                    <input type="button" value="5" id="btn-5" class="btn">
-                </td>
-                <td>
-                    <input type="button" value="6" id="btn-6" class="btn">
-                </td>
-                <td>
-                     <input type="button" value="-" id="btn-minus" class="btn">
+                    <input type="button" value="+" id="btn-plus" class="btn" onclick="displayButton('+')">
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="button" value="7" id="btn-7" class="btn">
+                    <input type="button" value="4" id="btn-4" class="btn" onclick="displayButton('4')">
                 </td>
                 <td>
-                    <input type="button" value="8" id="btn-8" class="btn">
+                    <input type="button" value="5" id="btn-5" class="btn" onclick="displayButton('5')">
                 </td>
                 <td>
-                    <input type="button" value="9" id="btn-9" class="btn">
+                    <input type="button" value="6" id="btn-6" class="btn" onclick="displayButton('6')">
                 </td>
                 <td>
-                    <input type="button" value="x" id="btn-multi" class="btn">
+                     <input type="button" value="-" id="btn-minus" class="btn" onclick="displayButton('-')">
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="button" value="C" id="btn-clear" class="btn">
+                    <input type="button" value="7" id="btn-7" class="btn" onclick="displayButton('7')">
                 </td>
                 <td>
-                    <input type="button" value="0" id="btn-0" class="btn">
+                    <input type="button" value="8" id="btn-8" class="btn" onclick="displayButton('8')">
                 </td>
                 <td>
-                    <input type="button" value="=" id="btn-equal" class="btn">
+                    <input type="button" value="9" id="btn-9" class="btn" onclick="displayButton('9')">
                 </td>
                 <td>
-                    <input type="button" value="/" id="btn-devide" class="btn">
+                    <input type="button" value="x" id="btn-multi" class="btn" onclick="displayButton('*')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="C" id="btn-clear" class="btn" onclick="clearButton()">
+                </td>
+                <td>
+                    <input type="button" value="0" id="btn-0" class="btn" onclick="displayButton('0')">
+                </td>
+                <td>
+                    <input type="button" value="=" id="btn-equal" class="btn" onclick="solve()">
+                </td>
+                <td>
+                    <input type="button" value="/" id="btn-devide" class="btn" onclick="displayButton('/')">
                 </td>
             </tr>
         </table>
     </form>
+
+    <script src="calculator.js"></script>
 </body>
 
 </html>

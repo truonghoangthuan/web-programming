@@ -1,35 +1,39 @@
 .calculator {
     padding: 0px;
     width: 400px;
+    height: 800px;
     margin: auto;
 }
 
-.input-box {
+.text-box {
     width: 408px;
-    height: 30px;
+    height: 50px;
     padding: 0px;
     margin: 0px auto 0px auto;
-    box-sizing: border-box;
+    text-align: right;
+    font-size: 16pt;
 }
 
 .btn {
     width: 100px;
-    height: 30px;
+    height: 50px;
     padding: 2px 2px 2px 2px;
     border-width: 1px;
     border-radius: 5px;
-    box-sizing: border-box;
+    background-color: white;
+}
+
+input:active {
+    background-color: gray;
 }
 
 td {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
 
 tr {
     width: 400px;
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
