@@ -1,5 +1,3 @@
---The loai: ma_tloai, ten_tloai
-
 INSERT INTO theloai VALUE (1, "Nhạc trẻ");
 INSERT INTO theloai VALUE (2, "Nhạc trữ tình");
 INSERT INTO theloai VALUE (3, "Nhạc cách mạng");

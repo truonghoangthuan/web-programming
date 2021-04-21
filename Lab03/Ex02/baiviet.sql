@@ -1,6 +1,3 @@
---Bai hat: id, tieude (tiêu đề bài viết), ten_bhat (tên bài hát), ma_tloai (mã thể loại), tomtat, ma_tgia (mã tác giả), ngayviet (ngày viết)
---Chu y: gia tri  kieu Date trong MySQL phai duoc bieu dien theo dang "YYYY/MM/DD"
---
 INSERT INTO baiviet (
         ma_bviet,
         tieude,
