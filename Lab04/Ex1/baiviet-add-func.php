@@ -1,12 +1,12 @@
 <?php
-
     function get_ma_bviet() {
         require_once "/php/web-programming/Lab03/Ex4/db-connector.php";
 
-        $q_result = mysqli_query($conn, "SELECT MAX(ma_bviet) as maxm FROM baiviet")
+        $sql = "SELECT MAX(ma_bviet) as maxm FROM baiviet";
+        $q_result = mysqli_query($conn, $sql)
             or die("Query failed: " . mysqli_error($conn));
         
-        //echo "maxm: " . mysql_result($q_result, 0, "maxm") . "; ";
+        echo "maxm: " . mysqli_fetch_array($q_result, 0, "maxm") . "; ";
 
         return mysqli_fetch_array($q_result, 0, "maxm") + 1;
     }
@@ -24,7 +24,7 @@
             or die("Query failed: " . mysqli_error($conn));
         
         //generate list of options
-        while ($row = mysqli_fetch_array($GLOBALS["conn"], $q_result)) {
+        while ($row = mysqli_fetch_array($q_result)) {
             echo "<option value='", $row[0], "' ";
             
             if ($row[0] == $default)
