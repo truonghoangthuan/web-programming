@@ -2,13 +2,13 @@
     function get_ma_bviet() {
         require_once "/php/web-programming/Lab03/Ex4/db-connector.php";
 
-        $sql = "SELECT MAX(ma_bviet) as maxm FROM baiviet";
+        $sql = "SELECT MAX(ma_bviet) FROM baiviet";
         $q_result = mysqli_query($conn, $sql)
             or die("Query failed: " . mysqli_error($conn));
         
-        echo "maxm: " . mysqli_fetch_array($q_result, 0, "maxm") . "; ";
+        echo "maxm: " . mysqli_fetch_array($q_result);
 
-        return mysqli_fetch_array($q_result, 0, "maxm") + 1;
+        return mysqli_fetch_array($q_result);
     }
 
     function dropdown_options($tb_name, $value_col, $text_col, $none=false, $default='') {        
