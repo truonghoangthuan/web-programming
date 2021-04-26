@@ -1,5 +1,5 @@
 <?php
-require_once("/web-programming/Lab03/Ex4/db-connector.php");
+require_once("/php/web-programming/Lab03/Ex4/db-connector.php");
 ?>
 
 <html>

@@ -16,7 +16,7 @@
     <br>
     <?php   //search
         if (isset($_GET['search_kw'])) {    //if search keywords are submitted
-            require_once("/web-programming/Lab03/Ex4/db-connector.php");   //connected to DB after this step
+            require_once("/php/web-programming/Lab03/Ex4/db-connector.php");   //connected to DB after this step
             
             
             
