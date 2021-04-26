@@ -30,10 +30,7 @@ require_once("/php/web-programming/Lab03/Ex4/db-connector.php");
             echo "    Tóm tắt  " . mb_substr($row['tomtat'], 0, $space50, "UTF-8") . "...<br>";
             echo "<hr>";
             echo "</pre>\n\n";
-
         }
-        
-        
     ?>
 </body>
-<html
+</html>
