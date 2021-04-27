@@ -5,14 +5,14 @@
 </head>
 
 <body>
-    <!-- <?php include 'baiviet-add-func.php'; echo get_ma_bviet(); ?> -->
     <h1>Thêm bài viết</h1>
     <hr>
 
     <!-- form nhập thông tin bài viết -->
     <form name="f_add" action="baiviet-add.php" method="post">
         <pre>
-Mã bài viết <input type="text" size="5" name="ma_bviet" value="">
+Mã bài viết <input type="text" size="5" name="ma_bviet" value="<?php include 'baiviet-add-func.php';
+                                                                echo get_ma_bviet(); ?>">
     Tiêu đề <input type="text" size="70" name="tieude">
  Mã tác giả <input type="text" size="5" name="ma_tgia">
   Ngày viết <input type="text" size="11" name="ngayviet" id="ngayviet">
@@ -66,7 +66,7 @@ Mã thể loại <input type="text" size="5" name="ma_tloai">
     require_once("/php/web-programming/Lab03/Ex4/db-connector.php");
 
     //show all entries
-    $query = "SELECT * FROM baiviet as bv, theloai as tl, tacgia as tg" .
+    $query = "SELECT * FROM baiviet as bv, theloai as tl, tacgia as tg " .
         "WHERE bv.ma_tloai=tl.ma_tloai AND bv.ma_tgia=tg.ma_tgia";
 
     $q_result = mysqli_query($conn, $query)
